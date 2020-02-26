@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto Slab;
+}
+body{
+    background: linear-gradient(to left, #afbfe4 ,#e4efe9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.AboutMe{
+    display: block;
+    margin: 30px auto;
+    text-transform: capitalize;
+}
+.AboutMe table{
+    margin: auto;
+    width: 90%;
+    border: 0px;
+}
+.AboutMe table{
+    transform: translateY(-40px);
+}
+.AboutMe table td{
+    width: 300px;
+}
+.AboutMe table,td,th,caption{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: center;
+    height: 65px;
+}
+.AboutMe tr:nth-child(even){
+    background-color: #ff8080;
+}
+.AboutMe tr:nth-child(odd){
+		background-color:pink;
+}
+.AboutMe th{
+    background-color: lightseagreen;
+}
+.AboutMe caption{
+    background-color: whitesmoke;
+    border-bottom: 0;
+    text-transform: capitalize;
+}
+.image{
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    width: 350px;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+#image{
+    border-radius: 50%;
+    width: 350px;
+    transition: transform .4s ease-in-out;
+}
+#image:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 900px){
+.AboutMe table td{
+    height: 60px;
+    font-size: 20px;
+}
+.image{
+    width: 300px;
+}
+#image{
+    width: 300px;
+}
+
+}
